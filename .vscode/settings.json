@@ -1,0 +1,10 @@
+{
+  "editor.renderControlCharacters": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "deno.enable": true,
+  "deno.alwaysShowStatus": true,
+  "deno.autoFmtOnSave": true,
+}

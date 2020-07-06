@@ -1,0 +1,21 @@
+{
+  "name": "Deno Orange Sample",
+  "dockerFile": "Dockerfile",
+  "appPort": [8080],
+  "remoteUser": "vscode",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+  },
+  "extensions": [
+    "denoland.vscode-deno",
+    "usernamehw.errorlens",
+    "mkxml.vscode-filesize",
+    "eamodio.gitlens",
+    "christian-kohler.path-intellisense",
+    "visualstudioexptteam.vscodeintellicode",
+    "shardulm94.trailing-spaces",
+    "mosapride.zenkaku",
+    "gizak.shortcuts",
+    "spmeesseman.vscode-taskexplorer",
+  ]
+}

@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: deno install
+      run: curl -fsSL https://deno.land/x/install/install.sh | sh
+
+    - name: lint
+      run: deno lint --unstable
+    
+    - name: test
+      run: deno test --config tsconfig.json --allow-run --allow-read --allow-write

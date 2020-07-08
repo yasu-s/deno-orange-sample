@@ -17,7 +17,7 @@ jobs:
       run: curl -fsSL https://deno.land/x/install/install.sh | sh
 
     - name: lint
-      run: deno lint --unstable
+      run: /home/runner/.deno/bin/deno lint --unstable
     
     - name: test
-      run: deno test --config tsconfig.json --allow-run --allow-read --allow-write
+      run: /home/runner/.deno/bin/deno test --config tsconfig.json --allow-run --allow-read --allow-write

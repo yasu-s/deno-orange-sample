@@ -14,9 +14,9 @@
       "command": "deno upgrade"
     },
     {
-      "label": "run",
+      "label": "test",
       "type": "shell",
-      "command": "deno run --allow-net main.ts"
+      "command": "deno test --config tsconfig.json --allow-run --allow-read --allow-write"
     }
   ]
 }

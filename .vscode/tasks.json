@@ -14,6 +14,16 @@
       "command": "deno upgrade"
     },
     {
+      "label": "lint",
+      "type": "shell",
+      "command": "deno lint --unstable"
+    },
+    {
+      "label": "fmt",
+      "type": "shell",
+      "command": "deno fmt"
+    },
+    {
       "label": "test",
       "type": "shell",
       "command": "deno test --config tsconfig.json --allow-run --allow-read --allow-write"
